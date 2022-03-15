@@ -3,6 +3,7 @@
   import HomeSection from '$lib/sections/Home/HomeSection.svelte'
   import PeopleSection from "$lib/sections/People/PeopleSection.svelte";
   import ServiceSection from "$lib/sections/Service/ServiceSection.svelte";
+  import ProjectSection from "$lib/sections/Project/ProjectSection.svelte";
 
   export const prerender = true
 </script>
@@ -19,4 +20,6 @@
   <PeopleSection />
 
   <ServiceSection />
+
+  <ProjectSection />
 </div>
