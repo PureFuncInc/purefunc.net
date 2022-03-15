@@ -1,13 +1,19 @@
 <script context="module" lang="ts">
-	export const prerender = true
+  import NavBar from '$lib/components/NavBar/NavBar.svelte'
+  import HomeSection from '$lib/sections/Home/HomeSection.svelte'
+  import PeopleSection from "$lib/sections/People/PeopleSection.svelte";
+
+  export const prerender = true
 </script>
 
 <svelte:head>
 	<title>$_purefunc</title>
 </svelte:head>
 
-<section>
-	<h1>
-		$_purefunc
-	</h1>
-</section>
+<div>
+	<NavBar />
+
+  <HomeSection />
+
+  <PeopleSection />
+</div>

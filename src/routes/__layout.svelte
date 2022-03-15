@@ -1,7 +1,7 @@
-<script context="module" lang="ts">
-  import '../app.css'
+<script lang="ts">
+  import { main } from '../app.css'
 </script>
 
-<main>
+<main class={main}>
   <slot />
 </main>

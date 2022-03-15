@@ -1,4 +1,4 @@
-import { globalStyle } from '@vanilla-extract/css'
+import { globalStyle, style } from '@vanilla-extract/css'
 
 globalStyle(
   'html, body',
@@ -6,3 +6,7 @@ globalStyle(
     fontFamily: "'Open Sans', 'Helvetica Neue', sans-serif",
   },
 )
+
+export const main = style({
+  margin: '0 auto',
+})

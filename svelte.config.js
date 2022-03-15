@@ -25,7 +25,7 @@ const config = {
         process.env.NODE_ENV === 'development'
           ? {}
           : {
-            noExternal: [ '@vanilla-extract/css', '@vanilla-extract/css/fileScope' ],
+            noExternal: [ '@vanilla-extract/css', '@vanilla-extract/sprinkles', '@vanilla-extract/css/fileScope' ],
           },
     },
   },
