@@ -12,15 +12,15 @@ export interface Contact {
 export const contacts: Contact[] = [
   {
     key: 'DISCORD',
-    href: 'https://purefunc.net/discord',
+    href: 'https://discord.purefunc.net/',
     icon: faDiscord
   }, {
     key: 'YOUTUBE',
-    href: 'https://purefunc.net/youtube',
+    href: 'https://youtube.purefunc.net/',
     icon: faYoutube,
   }, {
     key: 'FACEBOOK',
-    href: 'https://purefunc.net/facebook',
+    href: 'https://facebook.purefunc.net/',
     icon: faFacebook,
   }, {
     key: 'EMAIL',
