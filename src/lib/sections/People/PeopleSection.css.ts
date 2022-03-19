@@ -15,20 +15,6 @@ export const wrapper = style([sprinkles({
   justifyContent: 'center',
 }])
 
-export const title = style([
-  sprinkles({
-    fontSize: {
-      mobile: '2.8rem',
-      desktop: '5.8rem'
-    },
-  }),
-  {
-    color: blacks[10],
-    textAlign: 'center',
-    marginBottom: 24,
-  },
-])
-
 export const cards = style({
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',

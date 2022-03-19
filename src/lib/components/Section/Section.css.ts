@@ -1,16 +1,14 @@
 import {style} from '@vanilla-extract/css';
-import {backgroundImage} from '$lib/styles/vars.css';
 import {responsiveBreakpoints} from '$lib/styles/sprinkles.css';
 
 export const section = style({
   height: '100vh',
   width: '100%',
-  backgroundImage: backgroundImage,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
   position: 'relative',
   overflow: 'hidden',
-  animation: 'height 600ms ease-in-out'
+  transition: 'height 600ms ease-in-out',
+  scrollSnapAlign: 'start',
+  scrollSnapStop: 'always',
 })
 
 export const wrapper = style({
@@ -30,10 +28,13 @@ export const wrapper = style({
   }
 })
 
-export const backgroundVideo = style({
+export const bg = style({
   height: '100%',
-  position: 'absolute',
-  top: 0,
-  left: '50%',
-  transform: 'translateX(-50%)'
+  width: '100%',
+  objectFit: 'cover',
+  objectPosition: 'center',
+})
+
+export const bgWrapper = style({
+  height: '100%',
 })

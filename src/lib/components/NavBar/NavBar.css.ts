@@ -1,9 +1,29 @@
 import {style} from '@vanilla-extract/css'
-import {responsiveBreakpoints, sprinkles} from '$lib/styles/sprinkles.css';
+import {colorBreakpoints, responsiveBreakpoints, sprinkles} from '$lib/styles/sprinkles.css';
 import {blacks} from '$lib/styles/colors';
 
 export const logo = style({
-  width: 160
+  flexBasis: '100%',
+  flexGrow: 0,
+  flexShrink: 0,
+  height: 25,
+  marginBottom: 24,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'contain',
+  backgroundPosition: 'center',
+  '@media': {
+    [colorBreakpoints.lightMode]: {
+      backgroundImage: "url('/images/$_purefunc_black.svg')",
+    },
+    [colorBreakpoints.darkMode]: {
+      backgroundImage: "url('/images/$_purefunc_white.svg')",
+    },
+    [responsiveBreakpoints.desktop]: {
+      flexBasis: 160,
+      height: 50,
+      marginBottom: 0,
+    }
+  }
 })
 
 export const navBar = style([sprinkles({
@@ -22,6 +42,7 @@ export const navBar = style([sprinkles({
   transform: 'translateX(-50%)',
   padding: 16,
   display: 'flex',
+  flexWrap: 'wrap',
   justifyContent: 'space-between',
   alignItems: 'center',
   zIndex: 100,
@@ -30,13 +51,14 @@ export const navBar = style([sprinkles({
     [responsiveBreakpoints.desktop]: {
       top: 24,
       borderRadius: 12,
+      flexWrap: 'nowrap',
     }
   }
 }])
 
 export const navItem = style({
   listStyle: 'none',
-  padding: '0 1.5rem'
+  padding: '0 .5rem'
 })
 
 export const link = style([sprinkles({
@@ -55,5 +77,10 @@ export const link = style([sprinkles({
 }])
 
 export const spacer = style({
-  flex: 1
+  flex: 0,
+  '@media': {
+    [responsiveBreakpoints.desktop]: {
+      flex: 1,
+    }
+  }
 })

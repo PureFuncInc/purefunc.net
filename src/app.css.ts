@@ -7,6 +7,13 @@ globalStyle(
   },
 )
 
+globalStyle(
+  'a',
+  {
+    textDecoration: 'none',
+  }
+)
+
 export const main = style({
   margin: '0 auto',
 })

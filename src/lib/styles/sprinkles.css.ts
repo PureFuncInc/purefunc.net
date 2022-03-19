@@ -7,6 +7,11 @@ export const responsiveBreakpoints = {
   desktop: 'screen and (min-width: 1024px)',
 }
 
+export const colorBreakpoints = {
+  lightMode: '',
+  darkMode: '(prefers-color-scheme: dark)',
+}
+
 const responsiveProperties = defineProperties({
   conditions: {
     mobile: {},
@@ -31,9 +36,9 @@ const colorProperties = defineProperties({
   shorthands: {},
   conditions: {
     lightMode: {},
-    darkMode: { '@media': '(prefers-color-scheme: dark)' },
+    darkMode: { '@media': colorBreakpoints.darkMode },
   },
-  defaultCondition: 'lightMode',
+  defaultCondition: 'darkMode',
 })
 
 export const sprinkles = createSprinkles(

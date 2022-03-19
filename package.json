@@ -29,7 +29,6 @@
     "eslint-plugin-svelte3": "^3.2.1",
     "svelte": "^3.46.0",
     "svelte-check": "^2.2.6",
-    "svelte-dark-mode": "^2.1.0",
     "svelte-preprocess": "^4.10.1",
     "tslib": "^2.3.1",
     "typescript": "~4.6.2"
@@ -37,9 +36,12 @@
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
+    "@fortawesome/free-brands-svg-icons": "^6.1.0",
+    "@fortawesome/free-solid-svg-icons": "^6.1.0",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
     "lodash-es": "^4.17.21",
+    "svelte-fa": "^2.4.0",
     "svelte-slidy": "^2.8.7"
   }
 }

@@ -1,33 +1,24 @@
 <script lang="ts">
   import Section from "$lib/components/Section/Section.svelte";
+  import SectionTitle from "$lib/components/SectionTitle/SectionTitle.svelte";
   import {Slidy} from "svelte-slidy";
-  import {wrapper} from "./ServiceSection.css";
+  import {wrapper, caption} from "./ServiceSection.css";
 
   const slides = [
     {
       id: 1,
-      src: 'https://loremflickr.com/500/500/',
-      caption: '',
+      src: '/images/placeholder.png',
+      caption: '系統接案',
     },
     {
       id: 2,
-      src: 'https://loremflickr.com/501/501/',
-      caption: '',
+      src: '/images/placeholder.png',
+      caption: '訓練及課程',
     },
     {
       id: 3,
-      src: 'https://loremflickr.com/502/501/',
-      caption: '',
-    },
-    {
-      id: 4,
-      src: 'https://loremflickr.com/501/502/',
-      caption: '',
-    },
-    {
-      id: 5,
-      src: 'https://loremflickr.com/503/501/',
-      caption: '',
+      src: '/images/placeholder.png',
+      caption: '社群發展',
     },
   ]
 
@@ -43,28 +34,45 @@
     slide: {
       gap: 10,
       class: "",
-      width: "85%",
       height: "100%",
+      width: '100%',
       backimg: true,
       imgsrckey: "src",
-      objectfit: "cover",
+      objectfit: "contain",
       overflow: "hidden",
     },
     controls: {
-      dots: false,
+      dots: true,
       dotsnum: false,
       dotsarrow: false,
-      dotspure: false,
+      dotspure: true,
       arrows: false,
       keys: true,
       drag: true,
       wheel: true,
     },
   }
+
+  const srcset = "/images/backgrounds/service/service,w_768.jpg 768w," +
+    "/images/backgrounds/service/service,w_1453.jpg 1453w," +
+    "/images/backgrounds/service/service,w_1923.jpg 1923w," +
+    "/images/backgrounds/service/service,w_2394.jpg 2394w," +
+    "/images/backgrounds/service/service,w_2890.jpg 2890w," +
+    "/images/backgrounds/service/service,w_3000.jpg 3000w"
 </script>
 
-<Section image="https://loremflickr.com/1600/900">
+<Section id="service" {srcset}>
   <div class={wrapper}>
-    <Slidy {slides} {...options} />
+    <SectionTitle>
+      服務
+    </SectionTitle>
+
+    <Slidy {slides} {...options} let:item>
+      <figure class={caption}>
+        <figcaption>
+          {item.caption}
+        </figcaption>
+      </figure>
+    </Slidy>
   </div>
 </Section>

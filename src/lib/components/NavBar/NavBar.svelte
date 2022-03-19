@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script lang="ts">
   import {
     logo,
     navBar,
@@ -6,30 +6,24 @@
     navItem,
     link,
   } from './NavBar.css'
-  import DarkMode from 'svelte-dark-mode'
   import { entries } from 'lodash-es'
 
-  let theme: string;
-
   const navs = entries({
-    Home: '#',
-    Us: '#us',
-    Services: '#services',
-    Projects: '#projects',
-    Contact: '#contact',
+    'people': "團隊",
+    'service': "服務",
+    'project': "產品",
+    'contact': "聯絡",
   })
 </script>
 
-<DarkMode bind:theme />
-
 <nav class={navBar}>
-  <img class={logo} alt="logo" src={theme === 'dark' ? "images/$_purefunc_white.svg" : "images/$_purefunc_black.svg"}/>
+  <div class={logo}></div>
 
   <div class={spacer}></div>
 
-  {#each navs as [label, href]}
+  {#each navs as [href, label]}
     <li class={navItem}>
-      <a class={link} href={href}>
+      <a class={link} href={'#' + href}>
         {label}
       </a>
     </li>

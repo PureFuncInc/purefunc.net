@@ -1,13 +1,20 @@
 <script lang="ts">
-  import {section, wrapper} from "./Section.css";
-  import {assignInlineVars} from "@vanilla-extract/dynamic";
-  import {backgroundImage} from "$lib/styles/vars.css";
+  import {section, wrapper, bg, bgWrapper} from "./Section.css";
 
-  export let image: string;
+  export let id = '';
+  export let srcset: string
 </script>
 
-<section style={assignInlineVars({[backgroundImage]: `url('${image}')`})} class={section}>
+<section {id} class={section}>
   <div class={wrapper}>
     <slot />
   </div>
+
+  <picture class={bgWrapper}>
+    <img
+      class={bg}
+      sizes="(max-width: 3840px) 100vw, 3840px"
+      {srcset}
+      alt="">
+  </picture>
 </section>
