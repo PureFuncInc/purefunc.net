@@ -32,5 +32,6 @@ export const title = style([sprinkles({
   transform: 'translate(-50%, -50%)',
   backgroundImage: 'linear-gradient(to top, #0000, #000F 50%)',
   backgroundClip: 'text',
+  WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent'
 }])

@@ -14,6 +14,8 @@ globalStyle(
   }
 )
 
-export const main = style({
-  margin: '0 auto',
-})
+globalStyle(
+  'main', {
+    margin: '0 auto',
+  }
+)

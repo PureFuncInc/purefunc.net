@@ -1,6 +1,7 @@
 {
   "name": "purefunc.net",
   "version": "1.0.1",
+  "license": "MIT",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -39,6 +40,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
     "@lukeed/uuid": "^2.0.0",
+    "@splidejs/svelte-splide": "^0.1.18",
     "cookie": "^0.4.1",
     "lodash-es": "^4.17.21",
     "svelte-fa": "^2.4.0",

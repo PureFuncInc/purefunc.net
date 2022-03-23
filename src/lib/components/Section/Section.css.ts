@@ -3,12 +3,7 @@ import {responsiveBreakpoints} from '$lib/styles/sprinkles.css';
 
 export const section = style({
   height: '100vh',
-  width: '100%',
   position: 'relative',
-  overflow: 'hidden',
-  transition: 'height 600ms ease-in-out',
-  scrollSnapAlign: 'start',
-  scrollSnapStop: 'always',
 })
 
 export const wrapper = style({

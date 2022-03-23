@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { main } from '../app.css'
+  import '@splidejs/splide/dist/css/splide.min.css';
+  import '../app.css'
 </script>
 
-<main class={main}>
+<main>
   <slot />
 </main>
