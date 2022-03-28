@@ -1,20 +1,31 @@
 <script lang="ts">
   import Section from "$lib/components/Section/Section.svelte";
-  import {title} from "./ProjectSection.css";
+  import SectionTitle from '$lib/components/SectionTitle/SectionTitle.svelte';
+  import ProjectBg from '$lib/assets/images/backgrounds/project.jpg';
+  import {Splide, SplideSlide} from '@splidejs/svelte-splide';
+  import ProjectCard from './ProjectCard/ProjectCard.svelte';
+  import { projects } from './Project.content';
+  import {wrapper} from "./ProjectSection.css";
 
-  const srcset = "/images/backgrounds/project/project,w_768.jpg 768w," +
-    "/images/backgrounds/project/project,w_1611.jpg 1611w," +
-    "/images/backgrounds/project/project,w_2202.jpg 2202w," +
-    "/images/backgrounds/project/project,w_2687.jpg 2687w," +
-    "/images/backgrounds/project/project,w_3102.jpg 3102w," +
-    "/images/backgrounds/project/project,w_3250.jpg 3250w"
+  const options = {
+    width: '100vw',
+    gap: '6rem',
+    padding: '6rem',
+  }
 </script>
 
-<Section id="project" {srcset}>
-<!--  <div class={strip}>-->
-<!--    UPCOMING PROJECTS-->
-<!--  </div>-->
-  <h2 class={title}>
-    敬請期待
-  </h2>
+<Section id="project" src={ProjectBg}>
+  <div class={wrapper}>
+    <SectionTitle>
+      產品
+    </SectionTitle>
+
+    <Splide {options}>
+      {#each projects as project}
+        <SplideSlide>
+          <ProjectCard {project} />
+        </SplideSlide>
+      {/each}
+    </Splide>
+  </div>
 </Section>

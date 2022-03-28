@@ -3,12 +3,8 @@ import {responsiveBreakpoints} from '$lib/styles/sprinkles.css';
 
 export const section = style({
   height: '100vh',
-  width: '100%',
+  width: '100vw',
   position: 'relative',
-  overflow: 'hidden',
-  transition: 'height 600ms ease-in-out',
-  scrollSnapAlign: 'start',
-  scrollSnapStop: 'always',
 })
 
 export const wrapper = style({
@@ -24,8 +20,8 @@ export const wrapper = style({
     [responsiveBreakpoints.desktop]: {
       left: '50%',
       transform: 'translateX(-50%)',
-    }
-  }
+    },
+  },
 })
 
 export const bg = style({
@@ -37,4 +33,5 @@ export const bg = style({
 
 export const bgWrapper = style({
   height: '100%',
+  width: '100%',
 })
