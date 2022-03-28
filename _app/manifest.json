@@ -1,54 +1,150 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-02265478.js",
+    "file": "start-b11884d0.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-3c1bbe25.js"
+      "_vendor-aae3de1e.js",
+      "_singletons-d1fb5791.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte"
+      "src/routes/index.svelte",
+      "src/routes/people/vincent-huang.svelte",
+      "src/routes/people/daniel-lee.svelte",
+      "src/routes/people/nelson-liu.svelte",
+      "src/routes/people/shawn-chou.svelte",
+      "src/routes/people/carlos-li.svelte",
+      "src/routes/people/wade-wu.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-6c0bb6f1.js",
+    "file": "pages/__layout.svelte-3ed54ab7.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-3c1bbe25.js"
+      "_vendor-aae3de1e.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-bc3f7c32.css"
+      "assets/pages/__layout.svelte-7a88020c.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-393cb089.js",
+    "file": "error.svelte-fface363.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-3c1bbe25.js"
+      "_vendor-aae3de1e.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-fb6b6841.js",
+    "file": "pages/index.svelte-65da8267.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-3c1bbe25.js"
+      "_vendor-aae3de1e.js"
     ],
     "css": [
-      "assets/pages/index.svelte-b492ace8.css"
+      "assets/pages/index.svelte-2f896789.css"
+    ],
+    "assets": [
+      "assets/home-943f245b.jpg",
+      "assets/vincent_huang-fc4d7b9b.png",
+      "assets/wade_wu-b0b7f653.png",
+      "assets/nelson_liu-36fc39ec.png",
+      "assets/carlos_li-84f8f570.png",
+      "assets/daniel_lee-4102f1e8.png",
+      "assets/shawn_chou-0a380816.png",
+      "assets/people-919fc2d4.jpg",
+      "assets/service-1d35d36b.jpg",
+      "assets/project-55b0a53e.jpg",
+      "assets/community-7b2b0a2d.jpg",
+      "assets/contact-1bcd16c2.jpg"
     ]
   },
-  "_vendor-3c1bbe25.js": {
-    "file": "chunks/vendor-3c1bbe25.js",
+  "src/routes/people/vincent-huang.svelte": {
+    "file": "pages/people/vincent-huang.svelte-a1ce2e07.js",
+    "src": "src/routes/people/vincent-huang.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-aae3de1e.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "src/routes/people/daniel-lee.svelte": {
+    "file": "pages/people/daniel-lee.svelte-d5792470.js",
+    "src": "src/routes/people/daniel-lee.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-aae3de1e.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "src/routes/people/nelson-liu.svelte": {
+    "file": "pages/people/nelson-liu.svelte-d6a76569.js",
+    "src": "src/routes/people/nelson-liu.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-aae3de1e.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "src/routes/people/shawn-chou.svelte": {
+    "file": "pages/people/shawn-chou.svelte-3e4e9b8b.js",
+    "src": "src/routes/people/shawn-chou.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-aae3de1e.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "src/routes/people/carlos-li.svelte": {
+    "file": "pages/people/carlos-li.svelte-84173e5b.js",
+    "src": "src/routes/people/carlos-li.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-aae3de1e.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "src/routes/people/wade-wu.svelte": {
+    "file": "pages/people/wade-wu.svelte-b9a4a97f.js",
+    "src": "src/routes/people/wade-wu.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-aae3de1e.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "_vendor-aae3de1e.js": {
+    "file": "chunks/vendor-aae3de1e.js",
     "css": [
-      "assets/vendor-c19ad7ed.css"
+      "assets/vendor-ec9510ad.css"
+    ]
+  },
+  "_singletons-d1fb5791.js": {
+    "file": "chunks/singletons-d1fb5791.js"
+  },
+  "_navigation-0e6511d1.js": {
+    "file": "chunks/navigation-0e6511d1.js",
+    "imports": [
+      "_singletons-d1fb5791.js"
     ]
   }
 }
