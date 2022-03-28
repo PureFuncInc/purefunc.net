@@ -1,9 +1,17 @@
+import VincentAvatar from '$lib/assets/images/people/vincent_huang.png'
+import WadeAvatar from '$lib/assets/images/people/wade_wu.png'
+import NelsonAvatar from '$lib/assets/images/people/nelson_liu.png'
+import CarlosAvatar from '$lib/assets/images/people/carlos_li.png'
+import DanielAvatar from '$lib/assets/images/people/daniel_lee.png'
+import ShawnAvatar from '$lib/assets/images/people/shawn_chou.png'
+
 export interface Person {
   name: {
     mandarin: string
     english: string
   }
   title: string
+  imageUrl?: string
   expertise: string[]
 }
 
@@ -14,6 +22,7 @@ export const people: Person[] = [
       "english": "Vincent Huang"
     },
     "title": "Co-founder",
+    imageUrl: VincentAvatar,
     "expertise": [
       "JVM Backend",
       "DevOps",
@@ -26,6 +35,7 @@ export const people: Person[] = [
       "english": "Ｗade Wu"
     },
     "title": "Co-founder",
+    imageUrl: WadeAvatar,
     "expertise": [
       "JAVA / Python Backend",
       "End-to-End Automation Testing"
@@ -37,6 +47,7 @@ export const people: Person[] = [
       "english": "Nelson Liu"
     },
     "title": "Co-founder",
+    imageUrl: NelsonAvatar,
     "expertise": [
       "JavaScript/TypeScript",
       "React",
@@ -49,6 +60,7 @@ export const people: Person[] = [
       "english": "Shawn Chou"
     },
     "title": "Co-founder",
+    imageUrl: ShawnAvatar,
     "expertise": [
       "Java",
       "Crypto Trading System",
@@ -62,6 +74,7 @@ export const people: Person[] = [
       "english": "Carlos Li"
     },
     "title": "Co-founder",
+    imageUrl: CarlosAvatar,
     "expertise": [
       "Kotlin/TypeScript",
       "SpringBoot/React/Flutter"
@@ -73,6 +86,7 @@ export const people: Person[] = [
       "english": "Daniel Lee"
     },
     "title": "Co-founder",
+    imageUrl: DanielAvatar,
     "expertise": [
       "JavaScript",
       "Vue",

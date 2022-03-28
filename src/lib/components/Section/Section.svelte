@@ -3,7 +3,7 @@
   import {section, wrapper, bg, bgWrapper} from "./Section.css";
 
   export let id = '';
-  export let srcset: string
+  export let src: string
 </script>
 
 <SplideSlide>
@@ -15,9 +15,8 @@
     <picture class={bgWrapper}>
       <img
         class={bg}
-        sizes="(max-width: 3840px) 100vw, 3840px"
-        {srcset}
-        alt="">
+        {src}
+        alt="background" />
     </picture>
   </section>
 </SplideSlide>

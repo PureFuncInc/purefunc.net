@@ -6,24 +6,25 @@
     navItem,
     link,
   } from './NavBar.css'
-  import { entries } from 'lodash-es'
+  import { createEventDispatcher } from 'svelte'
 
-  const navs = entries({
-    'people': "團隊",
-    'service': "服務",
-    'project': "產品",
-    'contact': "聯絡",
-  })
+  export let navs: [string, string, unknown][] = []
+
+  const dispatch = createEventDispatcher()
+
+  function onClickLink(id?: string) {
+    dispatch('navigate', {id})
+  }
 </script>
 
 <nav class={navBar}>
-  <div class={logo}></div>
+  <div class={logo} on:click={() => onClickLink()}></div>
 
   <div class={spacer}></div>
 
-  {#each navs as [href, label]}
+  {#each navs as [id, label]}
     <li class={navItem}>
-      <a class={link} href={'#' + href}>
+      <a class={link} href="#" on:click={() => onClickLink(id)}>
         {label}
       </a>
     </li>

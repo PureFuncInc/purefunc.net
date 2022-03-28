@@ -1,28 +1,32 @@
 <script lang="ts">
   import Section from "$lib/components/Section/Section.svelte";
-  import PersonCard from "./PersonCard/PersonCard.svelte";
+  import { Splide, SplideSlide } from '@splidejs/svelte-splide';
   import { people } from './People.content';
-  import { cards, wrapper } from "./PeopleSection.css";
+  import { wrapper } from "./PeopleSection.css";
+  import PersonCard from "./PersonCard/PersonCard.svelte";
   import SectionTitle from "$lib/components/SectionTitle/SectionTitle.svelte";
+  import PeopleBg from '$lib/assets/images/backgrounds/people.jpg';
 
-  const srcset= "/images/backgrounds/people/people,w_768.jpg 768w,"+
-    "/images/backgrounds/people/people,w_1632.jpg 1632w,"+
-    "/images/backgrounds/people/people,w_2228.jpg 2228w,"+
-    "/images/backgrounds/people/people,w_2729.jpg 2729w,"+
-    "/images/backgrounds/people/people,w_2723.jpg 2723w,"+
-    "/images/backgrounds/people/people,w_3840.jpg 3840w"
+  const options = {
+    height: '60vh',
+    gap: '1.5rem',
+    padding: '3rem',
+    pagination: false,
+  }
 </script>
 
-<Section id="people" {srcset}>
+<Section id="people" src={PeopleBg}>
   <div class={wrapper}>
     <SectionTitle>
       團隊
     </SectionTitle>
 
-    <div class={cards}>
+    <Splide {options}>
       {#each people as person}
-        <PersonCard {person} />
+        <SplideSlide>
+          <PersonCard {person} />
+        </SplideSlide>
       {/each}
-    </div>
+    </Splide>
   </div>
 </Section>

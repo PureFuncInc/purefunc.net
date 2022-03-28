@@ -5,8 +5,8 @@ import {blacks} from '$lib/styles/colors';
 export const title = style([
   sprinkles({
     fontSize: {
-      mobile: '2.8rem',
-      desktop: '5.8rem'
+      mobile: '2.2rem',
+      desktop: '4.6rem'
     },
   }),
   {

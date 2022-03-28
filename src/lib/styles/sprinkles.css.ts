@@ -1,5 +1,6 @@
-import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles'
-import {blacks} from './colors';
+import {createSprinkles, defineProperties} from '@vanilla-extract/sprinkles'
+import {blacks, fadedBlacks} from './colors';
+import {sizes} from './sizes'
 
 export const responsiveBreakpoints = {
   mobile: '',
@@ -21,7 +22,7 @@ const responsiveProperties = defineProperties({
   defaultCondition: 'mobile',
   properties: {
     width: [ '100vw', '1024px' ],
-    fontSize: ['1rem', '1.6rem', '2.2rem', '2.8rem', '3.4rem', '4.0rem', '4.6rem', '5.2rem', '5.8rem', '6.4rem']
+    fontSize: sizes
   },
   responsiveArray: [ 'mobile', 'tablet', 'desktop' ],
   shorthands: {},
@@ -31,7 +32,7 @@ const colorProperties = defineProperties({
   responsiveArray: [ 'lightMode', 'darkMode' ],
   properties: {
     color: blacks,
-    backgroundColor: blacks,
+    backgroundColor: [...blacks, ...fadedBlacks],
   },
   shorthands: {},
   conditions: {
