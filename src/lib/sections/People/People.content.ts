@@ -1,8 +1,8 @@
 import VincentAvatar from '$lib/assets/images/people/vincent_huang.png'
 import WadeAvatar from '$lib/assets/images/people/wade_wu.png'
-import NelsonAvatar from '$lib/assets/images/people/nelson_liu.png'
+import NelsonAvatar from '$lib/assets/images/people/nelson_liu.jpg'
 import CarlosAvatar from '$lib/assets/images/people/carlos_li.png'
-import DanielAvatar from '$lib/assets/images/people/daniel_lee.png'
+import DanielAvatar from '$lib/assets/images/people/daniel_lee.jpg'
 import ShawnAvatar from '$lib/assets/images/people/shawn_chou.png'
 
 export interface Person {
