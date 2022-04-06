@@ -19,7 +19,9 @@ export const ul = style({
   listStyle: 'none',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
+  justifyContent: 'space-between',
+  alignItems: 'stretch',
+  margin: '0 20vw',
 })
 
 export const li = style([sprinkles({
@@ -28,8 +30,7 @@ export const li = style([sprinkles({
     darkMode: blacks[1],
   }
 }), {
-  minWidth: '20vw',
-  marginBottom: 12,
+  marginBottom: 6,
   padding: '12px 18px',
 }])
 

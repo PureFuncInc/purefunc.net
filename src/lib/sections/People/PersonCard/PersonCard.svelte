@@ -1,5 +1,5 @@
 <script lang="ts">
-  import {card, cardTitle, cardAvatar, cardContent, avatarImage} from "./PersonCard.css";
+  import {card, cardTitle, cardAvatar, cardContent, avatarImage, headline, story, detailList, detailTitle, detailContent, title, mandarinName, englishName} from "./PersonCard.css";
   import type {Person} from '../People.content';
 
   export let person: Person
@@ -13,21 +13,39 @@
   </div>
 
   <div class={cardTitle}>
-    <h2>{person.name.mandarin}</h2>
-    <h3>{person.name.english}</h3>
+    <h2 class={mandarinName}>{person.name.mandarin}</h2>
+    <h3 class={englishName}>{person.name.english}</h3>
 
-    <h5>{person.title}</h5>
+    <h5 class={title}>{person.title}</h5>
+
+    <h4 class={headline}>{person.headline}</h4>
   </div>
 
   <div class={cardContent}>
-    <dl>
-      <dt>
+    <p class={story}>
+      {person.story}
+    </p>
+
+    <dl class={detailList}>
+      <dt class={detailTitle}>
         專長
       </dt>
 
-      <dd>
-        {person.expertise}
-      </dd>
+      {#each person.expertise as expertise}
+        <dd class={detailContent}>
+          {expertise}
+        </dd>
+      {/each}
+
+      <dt class={detailTitle}>
+        成就
+      </dt>
+
+      {#each person.achievements as achievement}
+        <dd class={detailContent}>
+          {achievement}
+        </dd>
+      {/each}
     </dl>
   </div>
 </div>

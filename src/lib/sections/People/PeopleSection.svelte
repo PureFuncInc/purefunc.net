@@ -8,7 +8,7 @@
   import PeopleBg from '$lib/assets/images/backgrounds/people.jpg';
 
   const options = {
-    height: '60vh',
+    height: '65vh',
     gap: '1.5rem',
     padding: '3rem',
     pagination: false,
