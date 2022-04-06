@@ -37,9 +37,9 @@ export const li = style([sprinkles({
 export const link = style([sprinkles({
   color: {
     lightMode: blacks[0],
+    darkMode: blacks[10],
   }
 }), {
-  color: blacks[10],
   display: 'flex',
   alignItems: 'center',
 }])

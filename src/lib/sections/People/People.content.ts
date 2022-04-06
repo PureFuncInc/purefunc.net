@@ -79,7 +79,7 @@ export const people: Person[] = [
     },
     "title": "Co-founder",
     imageUrl: ShawnAvatar,
-    headline: 'play to earn ?',
+    headline: 'play to earn?',
     story: 'Ready to enter the meta universe or whatever-verse',
     achievements: [
       '2021 加入純函式',

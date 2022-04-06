@@ -58,11 +58,27 @@ export const navBar = style([sprinkles({
 export const navItem = style({
   listStyle: 'none',
   padding: '0 .5rem 0 1rem',
-  margin: 0,
   position: 'relative',
   '@media': {
     [responsiveBreakpoints.desktop]: {
       margin: '2rem 0',
+    },
+    [responsiveBreakpoints.mobile]: {
+      margin: 0,
+    },
+    [colorBreakpoints.lightMode]: {
+      selectors: {
+        '&:before': {
+          backgroundColor: '#0008',
+        }
+      }
+    },
+    [colorBreakpoints.darkMode]: {
+      selectors: {
+        '&:before': {
+          backgroundColor: '#FFF8',
+        }
+      }
     },
   },
   selectors: {
@@ -70,7 +86,6 @@ export const navItem = style({
       content: '',
       width: 8,
       height: 8,
-      backgroundColor: '#FFF8',
       position: 'absolute',
       top: '50%',
       left: 0,

@@ -11,23 +11,19 @@ export const container = style({
 })
 
 export const h1 = style([sprinkles({
-  color: {
-    lightMode: blacks[1],
-    darkMode: blacks[10],
-  },
   fontSize: {
     mobile: '2.8rem',
     desktop: '5.8rem'
   }
-})])
+}), {
+  color: blacks[10],
+}])
 
 export const h2 = style([sprinkles({
-  color: {
-    lightMode: blacks[1],
-    darkMode: blacks[10],
-  },
   fontSize: {
     mobile: '1.6rem',
     desktop: '2.2rem'
   }
-})])
+}), {
+  color: blacks[10],
+}])
