@@ -22,7 +22,10 @@ const responsiveProperties = defineProperties({
   defaultCondition: 'mobile',
   properties: {
     width: [ '100vw', '1024px' ],
-    fontSize: sizes
+    fontSize: sizes,
+    margin: sizes,
+    marginTop: sizes,
+    marginBottom: sizes,
   },
   responsiveArray: [ 'mobile', 'tablet', 'desktop' ],
   shorthands: {},

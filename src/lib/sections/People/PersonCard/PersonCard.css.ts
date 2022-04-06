@@ -1,6 +1,7 @@
 import {style} from '@vanilla-extract/css';
 import {responsiveBreakpoints, sprinkles} from '$lib/styles/sprinkles.css';
 import {blacks} from '$lib/styles/colors';
+import {sizes} from '$lib/styles/sizes';
 
 export const card = style([sprinkles({
   backgroundColor: {
@@ -66,4 +67,61 @@ export const cardContent = style({
       gridArea: '2 / 2 / 3 / 3',
     },
   },
+})
+
+export const mandarinName = style([sprinkles({
+  fontSize: {
+    mobile: sizes[2],
+    desktop: sizes[3],
+  },
+})])
+
+export const englishName = style([sprinkles({
+  fontSize: {
+    mobile: sizes[1],
+    desktop: sizes[2],
+  },
+})])
+
+export const title = style([sprinkles({
+  fontSize: {
+    mobile: sizes[0],
+    desktop: sizes[1],
+  },
+})])
+
+export const headline = style({
+  marginTop: 18,
+  fontStyle: 'italic',
+})
+
+export const story = style([sprinkles({
+  color: {
+    darkMode: blacks[8],
+    lightMode: blacks[2],
+  }
+}), {
+  borderLeftStyle: 'solid',
+  borderLeftWidth: 6,
+  borderLeftColor: blacks[6],
+  marginBottom: 18,
+  padding: 6,
+}])
+
+export const detailList = style({
+  display: 'none',
+  '@media': {
+    [responsiveBreakpoints.desktop]: {
+      display: 'flex',
+      flexDirection: 'column',
+    }
+  }
+})
+
+export const detailTitle = style({
+  fontSize: '1.2rem',
+})
+
+export const detailContent = style({
+  marginLeft: sizes[1],
 })
