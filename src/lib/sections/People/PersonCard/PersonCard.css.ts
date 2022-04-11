@@ -13,14 +13,14 @@ export const card = style([sprinkles({
     darkMode: blacks[10],
   }
 }), {
-  padding: 18,
-  boxShadow: '0 0 3px 3px rgba(0, 0, 0, 0.15)',
-  borderRadius: 6,
-  display: 'grid',
-  height: '100%',
-  gridTemplateColumns: '1fr',
-  gridTemplateRows: '50% 1fr 2fr',
-  gap: '1rem',
+  "padding": 18,
+  "boxShadow": '0 0 3px 3px rgba(0, 0, 0, 0.15)',
+  "borderRadius": 6,
+  "display": 'grid',
+  "height": '100%',
+  "gridTemplateColumns": '1fr',
+  "gridTemplateRows": '50% 1fr 2fr',
+  "gap": '1rem',
   '@media': {
     [responsiveBreakpoints.desktop]: {
       gridTemplateColumns: 'repeat(2, 1fr)',
@@ -30,7 +30,7 @@ export const card = style([sprinkles({
 }])
 
 export const cardAvatar = style({
-  gridArea: '1 / 1 / 2 / 2',
+  "gridArea": '1 / 1 / 2 / 2',
   '@media': {
     [responsiveBreakpoints.desktop]: {
       gridArea: '1 / 1 / 3 / 2',
@@ -47,11 +47,11 @@ export const avatarImage = style({
 })
 
 export const cardTitle = style({
-  textAlign: 'center',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  gridArea: '2 / 1 / 3 / 2',
+  "textAlign": 'center',
+  "display": 'flex',
+  "flexDirection": 'column',
+  "justifyContent": 'center',
+  "gridArea": '2 / 1 / 3 / 2',
   '@media': {
     [responsiveBreakpoints.desktop]: {
       gridArea: '1 / 2 / 2 / 3',
@@ -60,8 +60,8 @@ export const cardTitle = style({
 })
 
 export const cardContent = style({
-  gridArea: '3 / 1 / 4 / 2',
-  overflow: 'hidden',
+  "gridArea": '3 / 1 / 4 / 2',
+  "overflow": 'hidden',
   '@media': {
     [responsiveBreakpoints.desktop]: {
       gridArea: '2 / 2 / 3 / 3',
@@ -109,7 +109,7 @@ export const story = style([sprinkles({
 }])
 
 export const detailList = style({
-  display: 'none',
+  "display": 'none',
   '@media': {
     [responsiveBreakpoints.desktop]: {
       display: 'flex',

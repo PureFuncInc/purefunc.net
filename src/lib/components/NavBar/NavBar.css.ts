@@ -3,14 +3,14 @@ import {colorBreakpoints, responsiveBreakpoints, sprinkles} from '$lib/styles/sp
 import {blacks, fadedBlacks} from '$lib/styles/colors';
 
 export const logo = style({
-  flexBasis: '100%',
-  flexGrow: 0,
-  flexShrink: 0,
-  height: 25,
-  marginBottom: 24,
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'contain',
-  backgroundPosition: 'center',
+  "flexBasis": '100%',
+  "flexGrow": 0,
+  "flexShrink": 0,
+  "height": 25,
+  "marginBottom": 24,
+  "backgroundRepeat": 'no-repeat',
+  "backgroundSize": 'contain',
+  "backgroundPosition": 'center',
   '@media': {
     [colorBreakpoints.lightMode]: {
       backgroundImage: "url('/images/$_purefunc_black.svg')",
@@ -35,14 +35,14 @@ export const navBar = style([sprinkles({
     darkMode: fadedBlacks[1],
   }
 }), {
-  position: 'absolute',
-  padding: 16,
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  zIndex: 100,
-  boxShadow: '0 0 4px 4px rgba(0, 0, 0, 0.05)',
+  "position": 'absolute',
+  "padding": 16,
+  "display": 'flex',
+  "flexWrap": 'wrap',
+  "justifyContent": 'space-between',
+  "alignItems": 'center',
+  "zIndex": 100,
+  "boxShadow": '0 0 4px 4px rgba(0, 0, 0, 0.05)',
   '@media': {
     [responsiveBreakpoints.desktop]: {
       top: '50%',
@@ -56,9 +56,9 @@ export const navBar = style([sprinkles({
 }])
 
 export const navItem = style({
-  listStyle: 'none',
-  padding: '0 .5rem 0 1rem',
-  position: 'relative',
+  "listStyle": 'none',
+  "padding": '0 .5rem 0 1rem',
+  "position": 'relative',
   '@media': {
     [responsiveBreakpoints.desktop]: {
       margin: '2rem 0',
@@ -81,7 +81,7 @@ export const navItem = style({
       }
     },
   },
-  selectors: {
+  "selectors": {
     '&:before': {
       content: '',
       width: 8,
@@ -111,7 +111,7 @@ export const link = style([sprinkles({
 }])
 
 export const spacer = style({
-  flex: 0,
+  "flex": 0,
   '@media': {
     [responsiveBreakpoints.desktop]: {
       flex: 1,
