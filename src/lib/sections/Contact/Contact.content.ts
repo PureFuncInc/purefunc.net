@@ -18,19 +18,19 @@ export const contacts: Contact[] = [
     icon: faGithub,
   }, {
     key: 'LINKEDIN',
-    href: 'https://linkedin.purefunc.net/',
+    href: 'https://www.linkedin.com/company/purefuncinc',
     icon: faLinkedin,
   }, {
     key: 'DISCORD',
-    href: 'https://discord.purefunc.net/',
+    href: 'https://discord.gg/purefunc',
     icon: faDiscord
   }, {
     key: 'YOUTUBE',
-    href: 'https://youtube.purefunc.net/',
+    href: 'https://www.youtube.com/channel/UCiaBjaYilzLG5mmSqpP8fWg',
     icon: faYoutube,
   }, {
     key: 'FACEBOOK',
-    href: 'https://facebook.purefunc.net/',
+    href: 'https://www.facebook.com/purefuncinc',
     icon: faFacebook,
   }, {
     key: 'EMAIL',

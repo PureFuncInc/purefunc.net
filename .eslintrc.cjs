@@ -17,4 +17,7 @@ module.exports = {
 		es2017: true,
 		node: true
 	},
+  rules: {
+    'quote-props': [2, 'consistent-as-needed'],
+  },
 };
